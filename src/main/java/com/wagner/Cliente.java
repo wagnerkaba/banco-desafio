@@ -1,7 +1,6 @@
 package com.wagner;
 
-public class Banco {
-
+public class Cliente {
     public String nome;
 
 }
