@@ -1,13 +1,15 @@
 package com.wagner;
 
-public class ContaCorrente {
+public class ContaCorrente extends Conta {
 
-    public int agencia;
-    public int numero;
-    public double saldo;
+    public ContaCorrente(Cliente cliente) {
+        super(cliente);
+    }
 
-
-
-
+    @Override
+    public void imprimirSaldo() {
+        System.out.println("=== Extrato Conta Corrente ===");
+        super.imprimirInfosComuns();
+    }
 
 }
